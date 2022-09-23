@@ -9,14 +9,4 @@ const client = new ApolloClient({
   cache: new InMemoryCache()
 });
 
-client
-  .query({
-    query: gql`
-      {
-        ping
-      }
-    `
-  })
-  .then((data) => console.log(data));
-
 export default client;
